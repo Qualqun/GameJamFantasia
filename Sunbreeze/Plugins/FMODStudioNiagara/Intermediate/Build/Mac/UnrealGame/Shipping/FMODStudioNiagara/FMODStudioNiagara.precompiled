@@ -1,8 +1,0 @@
-{
-	"OutputFiles": [
-		"../../../arm64/UnrealGame/Shipping/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.o",
-		"../../../arm64/UnrealGame/Shipping/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.o",
-		"../../../x64/UnrealGame/Shipping/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.o",
-		"../../../x64/UnrealGame/Shipping/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.o"
-	]
-}
