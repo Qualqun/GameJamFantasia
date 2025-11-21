@@ -22,6 +22,7 @@
 <li><a href="#fmod-haptics-setup">FMOD Haptics Setup</a><ul>
 <li><a href="#supported-devices">Supported Devices</a></li>
 <li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#enable-fmod-studio-openxr">Enable FMOD Studio OpenXR</a></li>
 <li><a href="#apl-configuration">APL Configuration</a></li>
 </ul>
 </li>
@@ -189,7 +190,10 @@
 <li>Unreal Engine 5.4 or above</li>
 <li>OpenXR Unreal Plugin</li>
 </ul>
-<h3 id="apl-configuration"><a href="#apl-configuration">4.3.3 APL Configuration</a></h3>
+<h3 id="enable-fmod-studio-openxr"><a href="#enable-fmod-studio-openxr">4.3.3 Enable FMOD Studio OpenXR</a></h3>
+<p>The FMOD Studio OpenXR Integration is disabled by default, and must be enabled for FMOD haptics to operate on Quest. To enable it, navigate to "Edit &gt; Plugins", and search for "FMOD Studio OpenXR Integration". Tick the plugin to enable it, and restart the Unreal Editor for changes to take effect.</p>
+<p><img alt="FMOD Studio OpenXR Integration" src="images/fmod-studio-openxr-integration.png" /></p>
+<h3 id="apl-configuration"><a href="#apl-configuration">4.3.4 APL Configuration</a></h3>
 <p>A specific <a href="platform-specifics.html#deployment-of-android-plugins">APL file</a> is required for packaging on Meta Quest. Please create a new file in <code>Plugins/FMODStudio/Binaries/Android</code> called "fmod_haptics_APL.xml" with the following contents:</p>
 <div class="highlight language-xml"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="c">&lt;!--Plugin additions--&gt;</span>
@@ -214,7 +218,7 @@
 <span class="nt">&lt;/root&gt;</span>
 </pre></div></div>
 
-<p class="manual-footer">Unreal Integration 2.03.11 (2025-11-17). &copy; 2025 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.03.11 (2025-11-18). &copy; 2025 Firelight Technologies Pty Ltd.</p>
 </div>
 </body>
 </html>
