@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Sunbreeze",
+			"Path": "..\\Source\\Sunbreeze.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SunbreezeEditor",
+			"Path": "..\\Source\\SunbreezeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

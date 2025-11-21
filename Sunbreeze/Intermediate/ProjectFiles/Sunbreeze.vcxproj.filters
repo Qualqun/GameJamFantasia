@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Sunbreeze.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SunbreezeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\Sunbreeze">
+      <UniqueIdentifier>{9AD2D84F-59B4-32BF-B464-A6D521E419D7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Sunbreeze\Sunbreeze.Build.cs">
+      <Filter>Source\Sunbreeze</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Sunbreeze\Sunbreeze.cpp">
+      <Filter>Source\Sunbreeze</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sunbreeze\Sunbreeze.h">
+      <Filter>Source\Sunbreeze</Filter>
+    </ClInclude>
+    <None Include="..\..\Sunbreeze.uproject" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Sunbreeze.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/SVN/Eleves/HBenHafsa/Unreal/TP2/Sunbreeze/Intermediate/Build/Win64/x64/SunbreezeEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"D:/SVN/Eleves/HBenHafsa/Unreal/TP2/Sunbreeze/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sunbreeze/Sunbreeze.cpp.obj"
+"D:/SVN/Eleves/HBenHafsa/Unreal/TP2/Sunbreeze/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sunbreeze/PerModuleInline.gen.cpp.obj"
+"D:/SVN/Eleves/HBenHafsa/Unreal/TP2/Sunbreeze/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sunbreeze/Default.rc2.res"
+/OUT:"D:/SVN/Eleves/HBenHafsa/Unreal/TP2/Sunbreeze/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sunbreeze/UnrealEditor-Sunbreeze.lib"

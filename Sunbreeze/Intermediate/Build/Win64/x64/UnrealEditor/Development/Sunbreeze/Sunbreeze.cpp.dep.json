@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\svn\\eleves\\hbenhafsa\\unreal\\tp2\\sunbreeze\\source\\sunbreeze\\sunbreeze.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\svn\\eleves\\hbenhafsa\\unreal\\tp2\\sunbreeze\\intermediate\\build\\win64\\x64\\sunbreezeeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\svn\\eleves\\hbenhafsa\\unreal\\tp2\\sunbreeze\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sunbreeze\\definitions.sunbreeze.h",
+            "d:\\svn\\eleves\\hbenhafsa\\unreal\\tp2\\sunbreeze\\source\\sunbreeze\\sunbreeze.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

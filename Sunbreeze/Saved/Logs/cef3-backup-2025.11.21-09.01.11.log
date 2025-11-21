@@ -1,0 +1,10 @@
+[2584:5272:1121/095719.120:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[2584:23896:1121/095719.169:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[2584:5272:1121/095719.222:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[2584:5272:1121/095724.365:WARNING:external_registry_loader_win.cc(232)] Error observing HKLM: 5
+[2584:5272:1121/095726.810:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[2584:5272:1121/095726.810:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[2584:5272:1121/095726.810:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[2584:5272:1121/095726.839:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[2584:24372:1121/095726.859:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[2584:5272:1121/100111.024:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
