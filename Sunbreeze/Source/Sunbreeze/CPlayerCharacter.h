@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Math/Vector2D.h" 
 #include "GameFramework/Character.h"
 #include "CPlayerCharacter.generated.h"
 
@@ -32,4 +33,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void Carry();
+
+	UFUNCTION(BlueprintCallable)
+	FVector2D GetCharacterPosition(const float& _gridSize) const;
 };

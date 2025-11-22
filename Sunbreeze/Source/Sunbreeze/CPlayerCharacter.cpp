@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "CPlayerCharacter.h"
 
 // Sets default values
@@ -42,3 +41,8 @@ void ACPlayerCharacter::Carry()
 	UE_LOG(LogTemp, Warning, TEXT("Push"));
 }
 
+FVector2D ACPlayerCharacter::GetCharacterPosition(const float& _gridSize) const
+{
+	FVector3d location = GetActorLocation();
+	return FVector2D(FMath::GridSnap(location.X, _gridSize), FMath::GridSnap(location.Y, _gridSize));
+}
