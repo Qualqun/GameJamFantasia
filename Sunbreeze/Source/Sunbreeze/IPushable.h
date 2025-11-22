@@ -24,5 +24,5 @@ class SUNBREEZE_API IIPushable
 public:
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Push")
-	FVector PushObject(const FVector& Direction);
+	void PushObject(const FVector& Direction);
 };
