@@ -81,18 +81,18 @@ AActor* ACPlayerCharacter::CheckSight()
 
 void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 {
-	const double X = Input.X;  
-	const double Y = Input.Y; 
+	const double X = Input.X;
+	const double Y = Input.Y;
 
 	if (X == 0 && Y == 0) { return; }
 		
+	float TargetYaw = 0.f;
 
-	float TargetYaw = GetActorRotation().Yaw;
 	if (X == 1) {
-		TargetYaw = 180.0f;
-	}      
-	else if (X == -1) { 
-		TargetYaw = 0.f; 
+		TargetYaw = 0.f;
+	}
+	else if (X == -1) {
+		TargetYaw = 180.f;
 	}
 
 	if (Y == 1) {
@@ -102,6 +102,6 @@ void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 		TargetYaw = 270.f;
 	}
 
-	SetActorRotation(FRotator(0.f, TargetYaw, 0.f));
+	SetActorRotation(FRotator(0, TargetYaw, 0));
 	AddMovementInput(GetActorForwardVector(), 1.f);
 }
