@@ -40,6 +40,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	AActor* CheckSight();
 
+	UFUNCTION(BlueprintCallable)
+	void MoveCharacter(const FVector2D& Input);
+
 #if WITH_EDITORONLY_DATA
 	UPROPERTY(VisibleAnywhere)
 	bool showDebug{ false };
