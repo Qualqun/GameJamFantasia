@@ -7,14 +7,14 @@
 #include "IPushable.generated.h"
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(BlueprintType)
 class UIPushable : public UInterface
 {
 	GENERATED_BODY()
 };
 
 /**
- * 
+ *
  */
 class SUNBREEZE_API IIPushable
 {
@@ -22,4 +22,7 @@ class SUNBREEZE_API IIPushable
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Push")
+	FVector PushObject(const FVector& Direction);
 };
