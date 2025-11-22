@@ -89,10 +89,11 @@ void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 
 	float TargetYaw = GetActorRotation().Yaw;
 	if (X == 1) {
-		TargetYaw = 180.f;
+		TargetYaw = 180.0f;
 	}      
 	else if (X == -1) { 
-		TargetYaw = 0.f; }
+		TargetYaw = 0.f; 
+	}
 
 	if (Y == 1) {
 		TargetYaw = 90.f;
