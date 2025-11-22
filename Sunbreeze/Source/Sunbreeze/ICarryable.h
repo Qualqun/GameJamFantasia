@@ -24,5 +24,5 @@ class SUNBREEZE_API IICarryable
 public:
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Push")
-	void PickUp(APawn* PlayePawn);
+	void PickUp();
 };
