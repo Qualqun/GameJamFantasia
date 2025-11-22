@@ -20,7 +20,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -36,4 +36,15 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	FVector2D GetCharacterPosition(const float& _gridSize) const;
+
+	UFUNCTION(BlueprintCallable)
+	AActor* CheckSight();
+
+#if WITH_EDITORONLY_DATA
+	UPROPERTY(VisibleAnywhere)
+	bool showDebug{ false };
+#endif
+
+private:
+	FHitResult hitResult;
 };
