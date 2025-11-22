@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "APlayerCharacter.generated.h"
+#include "AGameCamera.generated.h"
 
 UCLASS()
-class SUNBREEZE_API AAPlayerCharacter : public AActor
+class SUNBREEZE_API AAGameCamera : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AAPlayerCharacter();
+	AAGameCamera();
 
 protected:
 	// Called when the game starts or when spawned
