@@ -48,6 +48,9 @@ public:
 	bool showDebug{ false };
 #endif
 
+	UPROPERTY(BlueprintReadWrite)
+	bool isPushing{ false };
+
 private:
 	FHitResult hitResult;
 };
