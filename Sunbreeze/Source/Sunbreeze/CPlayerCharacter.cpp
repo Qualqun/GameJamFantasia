@@ -70,11 +70,6 @@ AActor* ACPlayerCharacter::CheckSight()
 	if (hit)
 	{
 		return hitResult.GetActor();
-
-		if (showDebug)
-		{
-			DrawDebugPoint(GetWorld(), hitResult.ImpactPoint, 10.0f, FColor::Green, false, 2.0f);
-		}
 	}
 	return nullptr;
 }
@@ -96,10 +91,10 @@ void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 	}
 
 	if (Y == 1) {
-		TargetYaw = 270.f;
+		TargetYaw = 90.f;
 	}
 	else if (Y == -1) {
-		TargetYaw = 90.f;
+		TargetYaw = 270.f;
 	}
 
 	SetActorRotation(FRotator(0, TargetYaw, 0));
