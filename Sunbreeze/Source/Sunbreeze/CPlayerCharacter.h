@@ -47,6 +47,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	bool showDebug{ false };
 #endif
+
 	UPROPERTY(BlueprintReadWrite)
 	bool isPushing{ false };
 
