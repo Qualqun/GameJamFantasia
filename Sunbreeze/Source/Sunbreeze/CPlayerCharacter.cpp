@@ -96,10 +96,10 @@ void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 	}
 
 	if (Y == 1) {
-		TargetYaw = 90.f;
+		TargetYaw = 270.f;
 	}
 	else if (Y == -1) {
-		TargetYaw = 270.f;
+		TargetYaw = 90.f;
 	}
 
 	SetActorRotation(FRotator(0, TargetYaw, 0));
