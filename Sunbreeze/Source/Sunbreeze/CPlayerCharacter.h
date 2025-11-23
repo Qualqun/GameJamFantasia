@@ -51,6 +51,8 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	bool isPushing{ false };
 
+	UPROPERTY(BlueprintReadWrite)
+	bool isPick{ false };
 private:
 	FHitResult hitResult;
 };
