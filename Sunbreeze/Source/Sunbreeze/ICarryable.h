@@ -25,7 +25,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Push")
 	void PickUp();
-
-	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Push")
-	void Drop();
 };
