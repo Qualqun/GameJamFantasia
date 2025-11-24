@@ -49,28 +49,42 @@ FVector2D ACPlayerCharacter::GetCharacterPosition(const float& _gridSize) const
 
 AActor* ACPlayerCharacter::CheckSight()
 {
-	float sightLength = 100.0f;
+	FCollisionQueryParams params;
+	bool hit;
 
 	FVector startPoint = GetActorLocation();
-	FVector endPoint = startPoint + GetActorForwardVector() * sightLength;
+	FVector endPoint;
+	float sightLength = 100.0f;
 
-	DrawDebugLine(GetWorld(), startPoint, endPoint, FColor::Magenta, false, 0.0f);
 
-	FCollisionQueryParams params;
+	endPoint = startPoint + GetActorForwardVector() * sightLength;
+
 	params.AddIgnoredActor(this);
 
-	bool hit = GetWorld()->LineTraceSingleByChannel(
+
+	// DEBUG START
+	DrawDebugBox(GetWorld(), startPoint, BoxExtend, FColor::Red, false);
+	DrawDebugBox(GetWorld(), endPoint, BoxExtend, FColor::Green, false);
+	DrawDebugLine(GetWorld(), startPoint, endPoint, FColor::Blue, false);
+	// END DEBUG
+
+
+	hit = GetWorld()->SweepSingleByChannel(
 		hitResult,
 		startPoint,
 		endPoint,
+		GetActorRotation().Quaternion(),
 		ECC_Visibility,
+		FCollisionShape::MakeBox(BoxExtend),
 		params
 	);
 
 	if (hit)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Hit: %s"), *hitResult.GetActor()->GetName());
 		return hitResult.GetActor();
 	}
+
 	return nullptr;
 }
 
@@ -80,7 +94,7 @@ void ACPlayerCharacter::MoveCharacter(const FVector2D& Input)
 	const double Y = Input.Y;
 
 	if (X == 0 && Y == 0) { return; }
-		
+
 	float TargetYaw = 0.f;
 
 	if (X == 1) {

@@ -40,12 +40,19 @@ public:
 	UFUNCTION(BlueprintCallable)
 	AActor* CheckSight();
 
+	UPROPERTY(EditAnywhere)
+	FVector BoxExtend{ 50.f, 50.f, 50.f };
+
 	UFUNCTION(BlueprintCallable)
 	void MoveCharacter(const FVector2D& Input);
+
+	
 
 #if WITH_EDITORONLY_DATA
 	UPROPERTY(VisibleAnywhere)
 	bool showDebug{ false };
+
+	
 #endif
 
 	UPROPERTY(BlueprintReadWrite)
@@ -53,6 +60,8 @@ public:
 
 	UPROPERTY(BlueprintReadWrite)
 	bool isPick{ false };
+
+
 private:
 	FHitResult hitResult;
 };
