@@ -27,13 +27,6 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-
-	UFUNCTION(BlueprintCallable)
-	void Push();
-
-	UFUNCTION(BlueprintCallable)
-	void Carry();
-
 	UFUNCTION(BlueprintCallable)
 	FVector2D GetCharacterPosition(const float& _gridSize) const;
 

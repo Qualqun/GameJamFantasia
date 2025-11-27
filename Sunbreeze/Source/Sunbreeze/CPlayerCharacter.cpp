@@ -8,7 +8,6 @@ ACPlayerCharacter::ACPlayerCharacter()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -29,16 +28,6 @@ void ACPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-}
-
-void ACPlayerCharacter::Push()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Push"));
-}
-
-void ACPlayerCharacter::Carry()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Push"));
 }
 
 FVector2D ACPlayerCharacter::GetCharacterPosition(const float& _gridSize) const
@@ -62,11 +51,11 @@ AActor* ACPlayerCharacter::CheckSight()
 	params.AddIgnoredActor(this);
 
 
-	// DEBUG START
-	DrawDebugBox(GetWorld(), startPoint, BoxExtend, FColor::Red, false);
-	DrawDebugBox(GetWorld(), endPoint, BoxExtend, FColor::Green, false);
-	DrawDebugLine(GetWorld(), startPoint, endPoint, FColor::Blue, false);
-	// END DEBUG
+	//// DEBUG START
+	//DrawDebugBox(GetWorld(), startPoint, BoxExtend, FColor::Red, false);
+	//DrawDebugBox(GetWorld(), endPoint, BoxExtend, FColor::Green, false);
+	//DrawDebugLine(GetWorld(), startPoint, endPoint, FColor::Blue, false);
+	//// END DEBUG
 
 
 	hit = GetWorld()->SweepSingleByChannel(
@@ -81,7 +70,7 @@ AActor* ACPlayerCharacter::CheckSight()
 
 	if (hit)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hit: %s"), *hitResult.GetActor()->GetName());
+		//UE_LOG(LogTemp, Warning, TEXT("Hit: %s"), *hitResult.GetActor()->GetName());
 		return hitResult.GetActor();
 	}
 
